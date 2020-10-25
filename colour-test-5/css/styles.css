@@ -1,0 +1,288 @@
+/*general styling*/
+h4, p, a, .search-box input[type=text] {
+  font-size: 18px;
+  font-family: Tahoma;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Tahoma;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: Tahoma;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: Tahoma;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.body {
+  position: relative;
+  top: 410px;
+  padding: 30px;
+}
+
+/*headings and navigation*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title-banner {
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.webtitlecontainer {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.web-title {
+  font-size: 50px;
+  padding: 30px;
+  text-align: center;
+}
+
+.navcontainer {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 30px;
+}
+
+.indexcontainer {
+  margin-left: 20px;
+  margin-right: 30px;
+  padding: 12px;
+  position: relative;
+  font-size: 20px;
+}
+
+.alphacontainer {
+  margin-right: 20px;
+  margin-left: 30px;
+  padding: 12px;
+  position: relative;
+  font-size: 20px;
+}
+
+/* search */
+.search-box {
+  float: none;
+  display: block;
+  text-align: center;
+  margin: 8px 30px;
+}
+
+.search-box input[type=text] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  margin: 8px 30px;
+  font-size: 18px;
+}
+
+.search {
+  width: 500px;
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+    width: 80%;
+  }
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  /* Add a search icon to input */
+  background-position: 10px 12px;
+  /* Position the search icon */
+  background-repeat: no-repeat;
+  /* Do not repeat the icon image */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0 20px 20px 20px;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  /* Add a border to all links */
+  margin-top: -1px;
+  /* Prevent double borders */
+  background-color: #f6f6f6;
+  /* Grey background color */
+  padding: 12px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove default text underline */
+  font-size: 18px;
+  /* Increase the font-size */
+  color: black;
+  /* Add a black text color */
+  display: block;
+  /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+  /* Add a hover effect to all links, except for headers */
+}
+
+/*alphabet page*/
+.alphabet-page {
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+}
+
+.alphabet-title {
+  text-align: center;
+}
+
+table {
+  font-family: Tahoma;
+  font-size: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+td {
+  text-align: center;
+  padding: 30px;
+  border: solid 2px;
+}
+
+td .tooltipcontainer {
+  position: relative;
+  bottom: 115px;
+  right: 31px;
+}
+
+td .tooltip {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  width: 120px;
+  height: 120px;
+  padding: 12px;
+  text-align: right;
+}
+
+td:hover .tooltip {
+  display: block;
+}
+
+td:hover .letter {
+  visibility: hidden;
+}
+
+.letter {
+  font-size: 70px;
+}
+
+.letter-link, .letter-link:active, .letter-link {
+  color: black
+}
+
+.alphabet-vowels, .alphabet-info {
+  width: 50%;
+  margin: 20px auto 40px auto;
+  text-align: justify;
+}
+
+.audio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+/*definition page*/
+.defined-term {
+  width: 70%;
+  position: relative;
+  margin-right: auto;
+  margin-left: 15%;
+}
+
+.definition {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* colours */
+
+.noun {
+  background-color: beige;
+  padding: 2px;
+}
+
+.adjective {
+  background-color: pink;
+  padding: 2px;
+}
+.conjunction {
+  background-color: darksalmon;
+  padding: 2px;
+}
+.verb {
+  background-color: darkseagreen;
+  padding: 2px;
+}
+
+.preposition {
+  background-color: gold;
+  padding: 2px;
+}
+
+.adverb {
+  background-color: indianred;
+  padding: 2px;
+}
+
+.pronoun {
+  background-color: lightblue;
+  padding: 2px;
+}
+
+.webtitlecontainer, .alphacontainer:hover,
+.indexcontainer:hover {
+  background-color: #e18b5a;
+}
+
+.web-title, .indexcontainer, .alphacontainer, .alphacontainer:hover,
+.indexcontainer:hover, .alphacontainer:visited,
+.indexcontainer:visited {
+  color: white;
+}
+
+.navcontainer {
+  background-color: #bfba56;
+}
+
+body {
+  background-color: #eae3ab;
+}
